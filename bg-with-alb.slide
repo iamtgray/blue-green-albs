@@ -1,0 +1,284 @@
+Blue/Green Deploys using ALB's
+"Using only an ALB for blue/green deploys"
+01 Jun 2018
+Tags: aws, alb, blue/green, deployment, ci
+
+Thomas gray
+thomas.gray@infinityworks.com
+@iamtgray
+
+View this presentation at https://github.com/iamtgray/blue-green-albs/bg-with-alb.slide
+
+
+* Who am I?
+Firstly I'm a dad - this is my two week old daughter Amelia
+.image img/amelia1.jpg
+
+* Who am I?
+Secondly I'm a senior consultant at Infinity Works
+I'm a technical lead for an unnamed client who works in the entertainment industry,
+working to offer consumers lower prices for activities and meals out
+
+This is me at work:
+
+.image img/seth.jpg
+
+* What is a blue/green deployment?
+
+* What is a blue/green deployment?
+
+- Blue-green deployment is a technique that reduces downtime and risk by running two identical production environments called Blue and Green. At any time, only one of the environments is live, with the live environment serving all production traffic (Cloud Foundry)
+.link https://docs.cloudfoundry.org/devguide/deploy-apps/blue-green.html Cloud Foundry
+- The blue-green deployment approach does this by ensuring you have two production environments, as identical as possible. At any time one of them, let's say blue for the example, is live. As you prepare a new release of your software you do your final stage of testing in the green environment. Once the software is working in the green environment, you switch the router so that all incoming requests go to the green environment - the blue one is now idle. (Martin Fowler)
+.link https://martinfowler.com/bliki/BlueGreenDeployment.html Martin Fowler
+
+* A little bit of background 
+
+* A little bit of background 
+
+- Client with internal engineering team
+- Augmented into & integrated with their team to help implement new practice
+- Fairly big project (more than 1 year, and more than 10 consultants)
+- Break monolith into services, and replace where not fit for purpose
+- Now rolling off us to continue these systems
+
+* A little bit of background
+
+Some tehnical terms I'm going to be using
+
+- Containers - Docker containers of our application code
+- Rancher - A docker scheduling tool that we use to on top of AWS to manage the applications
+- ALB - Amazon's Application Load Balancer (the new one)
+- Target Groups - Amazon's term for an application on a set of servers, that all listen on a specific port
+- Snowflake environment/server - Something un-reproduceable built by "that guy", never to be rebuilt the same
+- Stack - A set of services in rancher, a service is one or more containers of the same type
+
+* How it used to be
+
+* How it used to be
+
+- FTP uploads of new code to production from a few special engineers machines
+- No docker or reproduceability
+- Snowflake environments
+- No CI/CD pipelines 
+- Little/no automated testing
+- Manual smoke testing pre/post deploy
+
+* What we had done for them
+
+* What we had done for them
+
+We are sticklers for reproduceability and are avid dislikers of the snowflake, so automate & monitor everything!
+- Containerised application
+- Implemented SOA for new platform
+- Implemented rancher as a container manager/scheduler
+- Implemented concourse as a CI pipeline
+
+.image img/amelia2.png
+
+* How we deployed until recently
+
+* How we deployed until recently
+
+- Concourse CI builds a new image, and deploys to our test environment
+- Automated test packs run
+- A release is staged (manual button click)
+- Slack messages are sent (and an email) to the client for them to nominally approve the release
+- Release button is pushed by anyone in the team
+- Concourse talks to rancher, tells it to upgrade a stack of containers to a new version
+- Manual smoke test post-deploy by engineers and sometimes testers
+
+.image img/concourse.png
+
+* How we deploy now
+
+* How we deploy now
+
+- Concourse CI builds a new image, and deploys to our test environment
+- Automated test packs run
+- A release is staged (manual button click)
+- Slack messages are sent (and an email) to the client for them to nominally approve the release
+- Release button is pushed by anyone in the team
+- ...and then...
+
+* Enter the blue green deploy process
+
+* Enter the blue green deploy process
+
+1. Concourse runs a container that talks to AWS & Rancher
+2. Container asks Amazon which target group is getting traffic
+3. Container upgrades which ever stack isn't in service to the new version
+4. Container waits for the service to become healthy in rancher (for it to pass all healthchecks)
+5. Container tells amazon to change traffic to point to new stack
+6. Concourse waits for connections to drain from old stack (about 300 seconds)
+7. Concourse talks to Rancher and turns off old stack now out of service
+
+* Enter the blue green deploy process
+
+.image img/boom.gif
+
+* Say what?
+
+* A little bit of background perhaps
+
+- We run two copies of our application, one of them is almost always turned off
+- Each of those copies of those applications expose a different port on a server
+- Each copy of the application (port 8080 and 8081 for example) is linked to it's own target group in amazon
+
+
+* A little bit of background perhaps
+
+The stacks in rancher
+.image img/rancher2.png
+
+* A little bit of background perhaps
+
+Blue Target Group (Port 8083) - All targets healthy
+.image img/target1.png
+
+* A little bit of background perhaps
+
+Green Target Group (port 8084) - All targets unhealthy
+.image img/target2.png
+
+* Let's go through those steps in more detail..
+
+* 1. Concourse runs a container that talks to AWS & Rancher
+
+- Concourse as a CI system only knows how to run & build containers (it's clever like that)
+- This concourse step runs a container we wrote called "blue green deploy" which does the heavy lifting for us
+
+.image img/deploy.png
+
+* 2. Container asks Amazon which target group is getting traffic
+
+How does it do that? (..i hear you ask)
+
+Enter (stage left) - ***Listener rules***!
+
+Listener rules allow you to perform a really limited set of actions on traffic coming in to a loadbalancer, based upon a small set of conditions
+
+- Force authentication via cognito if host or path = this 
+- Send traffic to a different target group if the ^/path/equals/this.*$
+
+The above regex pattern match on path is really important, because that's the basis of how we send traffic
+
+* 2. Container asks Amazon which target group is getting traffic
+
+We change which target group gets the traffic, by changing one of these host rules. 
+
+Specifically, if we want all traffic to go to the blue target group, then we insert a rule that looks like this:
+
+.image img/blue_rule.png
+
+The really important part of that is this bit:
+
+.image img/blue_rule_big.png
+
+ Hint: $a isn't a regex pattern that will ever match, $ denotes the end
+
+* 2. Container asks Amazon which target group is getting traffic
+
+So we look at the rules on the loadbalancer and work out which stack is currently in service
+
+In this case, we know it's sending traffic to the blue stack, because our non-matching rule is in place
+
+* 3. Container upgrades which ever stack isn't in service to the new version
+
+.image img/bring_up_new_stack.png
+
+Now we tell rancher to upgrade the stack that's not in service, to the new version
+
+* 4. Container waits for the service to become healthy in rancher (for it to pass all healthchecks)
+
+.image img/healthcheck_stack.png
+
+We now make sure it's come up ok, and that it's passing Amazon's healthchecks
+
+* 5. Container tells amazon to change traffic to point to new stack
+
+In this step we toggle "toggle the loadbalancer" - What's really going on, is we change that rule in the listener in Amazon.
+
+That rule is either:
+
+ $a - Don't send any traffic to me
+
+or
+
+ * - Send me all the traffic
+
+.image img/toggle_loadbalancer.png 
+
+Now we've also done: 6. Concourse waits for connections to drain from old stack (about 300 seconds)
+
+* Nearly there..
+
+* 7. Concourse talks to Rancher and turns off old stack now out of service
+
+.image img/remove_old_containers.png
+
+Done!
+
+* Woo!
+
+.image img/boom.jpg
+
+* Recap..
+
+1. Concourse runs a container that talks to AWS & Rancher
+2. Container asks Amazon which target group is getting traffic
+3. Container upgrades which ever stack isn't in service to the new version
+4. Container waits for the service to become healthy in rancher (for it to pass all healthchecks)
+5. Container tells amazon to change traffic to point to new stack
+6. Concourse waits for connections to drain from old stack (about 300 seconds)
+7. Concourse talks to Rancher and turns off old stack now out of service
+
+
+* Summary
+
+So what does this give us?
+
+- It gives us deployments that don't have any lost connections
+- It allows our client to meet their SLA's with their clients
+- It gives us the ability to roll back a release, with one button press. All that button press does is turn back on the old stack, and change the rules.
+
+* Summary
+
+Why did we do it this way?
+
+- Using ALB's gives us the fewest number of moving parts
+- The internal team will take this over soon, it has to be understanderble and easy to replicate
+- We didn't want to add _another_ layer of abstraction in to our stack
+
+* Summary
+
+Are there any disadvantages?
+
+- ALB's take (up to) 300 seconds to drain connections from a stack
+- The process isn't transparent, as you're not in fine-grained control over every step
+- It's fairly difficult to monitor and report on
+
+* Summary
+
+Are there any improvements to be made to your pipeline?
+
+Yes!
+
+- Implement automated test suite post deploy (currently in progress)
+
+
+
+* Thanks!
+
+.image img/amelia3.jpg
+
+ ^ Amelia - 2 hours old
+
+* Any questions?
+
+
+
+
+
+
+
