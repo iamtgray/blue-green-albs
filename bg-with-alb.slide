@@ -1,13 +1,13 @@
 Blue/Green Deploys using ALB's
 "Using only an ALB for blue/green deploys"
-01 Jun 2018
+05 Jul 2018
 Tags: aws, alb, blue/green, deployment, ci
 
-Thomas gray
+Thomas Gray
 thomas.gray@infinityworks.com
 @iamtgray
 
-View this presentation at https://github.com/iamtgray/blue-green-albs/bg-with-alb.slide
+View this presentation at https://github.com/iamtgray/blue-green-albs
 
 
 * Who am I?
@@ -52,6 +52,20 @@ Some tehnical terms I'm going to be using
 - Target Groups - Amazon's term for an application on a set of servers, that all listen on a specific port
 - Snowflake environment/server - Something un-reproduceable built by "that guy", never to be rebuilt the same
 - Stack - A set of services in rancher, a service is one or more containers of the same type
+- SOA - Service Orientated Architecture - A set of small services that deliver the functionality
+- CI - Continuous Integration - Every change merged produces a new build
+- CD - Small frequent releases of continuously integrated software
+- OSI (Layer 1-7) - A framework for describing different network interactions
+
+
+* A little bit of background
+
+.image img/blue_green_deployments.png
+
+
+* A little bit of background
+
+.html img/svg.html
 
 * How it used to be
 
@@ -116,8 +130,6 @@ We are sticklers for reproduceability and are avid dislikers of the snowflake, s
 * Enter the blue green deploy process
 
 .image img/boom.gif
-
-* Say what?
 
 * A little bit of background perhaps
 
@@ -257,6 +269,12 @@ Are there any disadvantages?
 - ALB's take (up to) 300 seconds to drain connections from a stack
 - The process isn't transparent, as you're not in fine-grained control over every step
 - It's fairly difficult to monitor and report on
+
+* Summary 
+
+Has it gone wrong?
+
+- Yup, but not too badly
 
 * Summary
 

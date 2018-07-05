@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="366" height="590" fill="transparent" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.0">
+	<defs>
+		<clipPath id="clipPath0">
+			<path fill-rule="evenodd" d="M0,0L793.700787401575,0 793.700787401575,1122.51968503937 0,1122.51968503937 0,0Z" />
+		</clipPath>
+		<clipPath id="clipPath1">
+			<rect x="262" y="102" width="276" height="86" />
+		</clipPath>
+		<clipPath id="clipPath2">
+			<rect x="275" y="123.6914" width="250" height="33.0859" />
+		</clipPath>
+		<clipPath id="clipPath3">
+			<rect x="345.3333" y="227" width="106" height="86" />
+		</clipPath>
+		<clipPath id="clipPath4">
+			<rect x="358.3333" y="241.2435" width="80" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath5">
+			<rect x="187" y="327" width="107" height="87" />
+		</clipPath>
+		<clipPath id="clipPath6">
+			<rect x="186" y="326" width="107" height="87" />
+		</clipPath>
+		<clipPath id="clipPath7">
+			<rect x="200" y="341.2435" width="80" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath8">
+			<rect x="512" y="327" width="107" height="87" />
+		</clipPath>
+		<clipPath id="clipPath9">
+			<rect x="511" y="326" width="107" height="87" />
+		</clipPath>
+		<clipPath id="clipPath10">
+			<rect x="525" y="341.2435" width="80" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath11">
+			<path fill-rule="evenodd" d="M376.333333333333,167L376.333333333333,262 420.333333333333,262 420.333333333333,167 376.333333333333,167ZM402.833333333333,231L398.333333333333,240 393.833333333333,231 402.833333333333,231Z" />
+		</clipPath>
+		<clipPath id="clipPath12">
+			<path fill-rule="evenodd" d="M376.333333333333,167L420.333333333333,167 420.333333333333,262 376.333333333333,262 376.333333333333,167Z" />
+		</clipPath>
+		<clipPath id="clipPath13">
+			<path fill-rule="evenodd" d="M218,292L218,362 406.333333333333,362 406.333333333333,292 218,292ZM244.5,331L240,340 235.5,331 244.5,331Z" />
+		</clipPath>
+		<clipPath id="clipPath14">
+			<path fill-rule="evenodd" d="M218,292L406.333333333333,292 406.333333333333,362 218,362 218,292Z" />
+		</clipPath>
+		<clipPath id="clipPath15">
+			<path fill-rule="evenodd" d="M390.333333333333,292L390.333333333333,363 588,363 588,292 390.333333333333,292ZM569.5,331L565,340 560.5,331 569.5,331Z" />
+		</clipPath>
+		<clipPath id="clipPath16">
+			<path fill-rule="evenodd" d="M389.333333333333,291L389.333333333333,362 587,362 587,291 389.333333333333,291ZM568.5,330L564,339 559.5,330 568.5,330Z" />
+		</clipPath>
+		<clipPath id="clipPath17">
+			<path fill-rule="evenodd" d="M390.333333333333,292L588,292 588,363 390.333333333333,363 390.333333333333,292Z" />
+		</clipPath>
+		<clipPath id="clipPath18">
+			<path fill-rule="evenodd" d="M389.333333333333,291L587,291 587,362 389.333333333333,362 389.333333333333,291Z" />
+		</clipPath>
+		<clipPath id="clipPath19">
+			<rect x="103.6667" y="449.5" width="267.6667" height="263.5" />
+		</clipPath>
+		<clipPath id="clipPath20">
+			<rect x="136" y="481.5" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath21">
+			<rect x="149" y="508.2435" width="85" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath22">
+			<rect x="225" y="481" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath23">
+			<rect x="238" y="507.7435" width="85" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath24">
+			<rect x="136" y="569" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath25">
+			<rect x="149" y="595.7435" width="85" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath26">
+			<rect x="225" y="568.6667" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath27">
+			<rect x="238" y="595.4102" width="85" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath28">
+			<rect x="428.6667" y="449.5" width="276" height="263.5" />
+		</clipPath>
+		<clipPath id="clipPath29">
+			<rect x="461" y="481.5" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath30">
+			<rect x="474" y="508.2435" width="85" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath31">
+			<rect x="550" y="481" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath32">
+			<rect x="563" y="507.7435" width="85" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath33">
+			<rect x="461" y="569" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath34">
+			<rect x="474" y="595.7435" width="85" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath35">
+			<rect x="550" y="568.6667" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath36">
+			<rect x="563" y="595.4102" width="85" height="47.9818" />
+		</clipPath>
+		<clipPath id="clipPath37">
+			<rect x="112.3333" y="454.6914" width="250" height="33.0859" />
+		</clipPath>
+		<clipPath id="clipPath38">
+			<rect x="441.6667" y="454.6914" width="250" height="33.0859" />
+		</clipPath>
+		<clipPath id="clipPath39">
+			<rect x="283" y="782.8333" width="267.6667" height="263.5" />
+		</clipPath>
+		<clipPath id="clipPath40">
+			<rect x="315.3333" y="814.8333" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath41">
+			<rect x="328.3333" y="849.0247" width="85" height="33.0859" />
+		</clipPath>
+		<clipPath id="clipPath42">
+			<rect x="404.3333" y="814.3333" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath43">
+			<rect x="417.3333" y="848.5247" width="85" height="33.0859" />
+		</clipPath>
+		<clipPath id="clipPath44">
+			<rect x="315.3333" y="902.3333" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath45">
+			<rect x="328.3333" y="936.5247" width="85" height="33.0859" />
+		</clipPath>
+		<clipPath id="clipPath46">
+			<rect x="404.3333" y="902" width="111" height="111" />
+		</clipPath>
+		<clipPath id="clipPath47">
+			<rect x="417.3333" y="936.1914" width="85" height="33.0859" />
+		</clipPath>
+		<clipPath id="clipPath48">
+			<rect x="291.6667" y="788.0247" width="250" height="33.0859" />
+		</clipPath>
+		<clipPath id="clipPath49">
+			<path fill-rule="evenodd" d="M229.529552715655,391.261182108626L226.365015974441,470.374600638978 247.970447284345,471.238817891374 251.134984025559,392.125399361022 229.529552715655,391.261182108626Z" />
+		</clipPath>
+		<clipPath id="clipPath50">
+			<path fill-rule="evenodd" d="M574.654112631018,391.529223663173L554.908154201456,392.055782554628 557.012554035649,470.970776336827 576.75851246521,470.444217445372 574.654112631018,391.529223663173Z" />
+		</clipPath>
+		<clipPath id="clipPath51">
+			<path fill-rule="evenodd" d="M526.521782519893,616.726520264436L358.071016848345,724.467555037674 456.978217480107,879.106813068898 625.428983151655,771.36577829566 526.521782519893,616.726520264436Z" />
+		</clipPath>
+		<clipPath id="clipPath52">
+			<path fill-rule="evenodd" d="M272.890244519678,610.803646777089L183.013009374938,778.99130767403 381.443088813655,885.029686556244 471.320323958396,716.842025659304 272.890244519678,610.803646777089Z" />
+		</clipPath>
+	</defs>
+	<g clip-path="url(#clipPath0)">
+		<rect fill="#ffffff" x="0" y="0" width="794" height="1123" />
+	</g>
+	<g clip-path="url(#clipPath1)">
+		<g transform="translate(275 115)">
+			<path fill="#8fbeed" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M-0.499999999999886,0.5L249.5,0.5 249.5,60.5 -0.499999999999886,60.5 -0.499999999999886,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath2)">
+		<g transform="translate(275 137.552083333333)">
+			<text fill="#000000" x="30.3354" y="12.5182" font-family="'Arial',sans-serif" font-size="9.75pt">AWS Application Load Balancer</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath3)">
+		<g transform="translate(358.333333333333 240)">
+			<path fill="#8fbeed" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.166666666666572,0.5L80.1666666666666,0.5 80.1666666666666,60.5 0.166666666666572,60.5 0.166666666666572,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath4)">
+		<g transform="translate(358.333333333333 255.104166666667)">
+			<text fill="#000000" x="14.0897" y="11.9661" font-family="'Arial',sans-serif" font-size="9.75pt">Listener </text>
+			<text fill="#000000" x="22.6154" y="26.862" font-family="'Arial',sans-serif" font-size="9.75pt">Rules</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath5)">
+		<g transform="translate(201 341)">
+			<path fill="#96b656" stroke="#96b656" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0.5L80.5,0.5 80.5,60.5 0.5,60.5 0.5,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath6)">
+		<g transform="translate(200 340)">
+			<path fill="#8fbeed" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0.5L80.5,0.5 80.5,60.5 0.5,60.5 0.5,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath7)">
+		<g transform="translate(200 355.104166666667)">
+			<text fill="#000000" x="3.7983" y="11.9661" font-family="'Arial',sans-serif" font-size="9.75pt">Blue Target </text>
+			<text fill="#000000" x="21.4663" y="26.862" font-family="'Arial',sans-serif" font-size="9.75pt">Group</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath8)">
+		<g transform="translate(526 341)">
+			<path fill="#96b656" stroke="#96b656" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0.5L80.5,0.5 80.5,60.5 0.5,60.5 0.5,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath9)">
+		<g transform="translate(525 340)">
+			<path fill="#96b656" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0.5L80.5,0.5 80.5,60.5 0.5,60.5 0.5,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath10)">
+		<g transform="translate(525 355.104166666667)">
+			<text fill="#000000" x="19.6154" y="11.9661" font-family="'Arial',sans-serif" font-size="9.75pt">Green </text>
+			<text fill="#000000" x=".465" y="26.862" font-family="'Arial',sans-serif" font-size="9.75pt">Target Group</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath11)">
+		<g transform="translate(400 175)">
+			<path stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M-0.499999999999886,0.5L-0.499999999999886,32.5 -1.49999999999989,32.5 -1.49999999999989,65.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath12)">
+		<g transform="matrix(6.12303176911189E-17 -1 1 6.12303176911189E-17 398.333333333333 240)">
+			<polygon stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" points="9,-4.5 0,0 9,4.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath13)">
+		<g transform="translate(398.333333333333 300)">
+			<path stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.166666666666515,0.5L0.166666666666515,20.5 -157.833333333333,20.5 -157.833333333333,40.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath14)">
+		<g transform="matrix(6.12303176911189E-17 -1 1 6.12303176911189E-17 240 340)">
+			<polygon stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" points="9,-4.5 0,0 9,4.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath15)">
+		<g transform="translate(399.333333333333 301)">
+			<path stroke="#96b656" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.166666666666515,0.5L0.166666666666515,20.5 167.166666666667,20.5 167.166666666667,40.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath16)">
+		<g transform="translate(398.333333333333 300)">
+			<path stroke="#96b656" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.166666666666515,0.5L0.166666666666515,20.5 167.166666666667,20.5 167.166666666667,40.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath17)">
+		<g transform="matrix(6.12303176911189E-17 -1 1 6.12303176911189E-17 566 341)">
+			<polygon stroke="#96b656" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" points="9,-4.5 0,0 9,4.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath18)">
+		<g transform="matrix(6.12303176911189E-17 -1 1 6.12303176911189E-17 565 340)">
+			<polygon stroke="#96b656" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" points="9,-4.5 0,0 9,4.5" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath19)">
+		<g transform="translate(116.666666666667 462.5)">
+			<path fill="#8fbeed" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M-0.166666666666572,238L241.833333333333,238 241.833333333333,0 -0.166666666666572,0 -0.166666666666572,238ZM23.8333333333334,213L217.833333333333,213 217.833333333333,24 23.8333333333334,24 23.8333333333334,213Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath20)">
+		<g transform="translate(149 494.5)">
+			<path fill="#8fbeed" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0L85.5,0 85.5,85 0.5,85 0.5,0Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath21)">
+		<g transform="translate(149 522.104166666667)">
+			<text fill="#000000" x="3.9583" y="11.9661" font-family="'Arial',sans-serif" font-size="9.75pt">Membership </text>
+			<text fill="#000000" x=".8482" y="26.862" font-family="'Arial',sans-serif" font-size="9.75pt">API Container</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath22)">
+		<g transform="translate(238 494)">
+			<path fill="#8fbeed" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0.5L85.5,0.5 85.5,85.5 0.5,85.5 0.5,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath23)">
+		<g transform="translate(238 521.604166666667)">
+			<text fill="#000000" x="3.9583" y="12.4661" font-family="'Arial',sans-serif" font-size="9.75pt">Membership </text>
+			<text fill="#000000" x=".8482" y="27.362" font-family="'Arial',sans-serif" font-size="9.75pt">API Container</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath24)">
+		<g transform="translate(149 582)">
+			<path fill="#8fbeed" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.499999999999943,0.5L85.4999999999999,0.5 85.4999999999999,85.5 0.499999999999943,85.5 0.499999999999943,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath25)">
+		<g transform="translate(149 609.604166666667)">
+			<text fill="#000000" x="3.9583" y="12.4661" font-family="'Arial',sans-serif" font-size="9.75pt">Membership </text>
+			<text fill="#000000" x=".8482" y="27.362" font-family="'Arial',sans-serif" font-size="9.75pt">API Container</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath26)">
+		<g transform="translate(238 581.666666666667)">
+			<path fill="#8fbeed" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.499999999999943,-0.166666666666742L85.4999999999999,-0.166666666666742 85.4999999999999,84.8333333333333 0.499999999999943,84.8333333333333 0.499999999999943,-0.166666666666742Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath27)">
+		<g transform="translate(238 609.270833333333)">
+			<text fill="#000000" x="3.9583" y="11.7995" font-family="'Arial',sans-serif" font-size="9.75pt">Membership </text>
+			<text fill="#000000" x=".8482" y="26.6953" font-family="'Arial',sans-serif" font-size="9.75pt">API Container</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath28)">
+		<g transform="translate(441.666666666667 462.5)">
+			<path fill="#96b656" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M-0.166666666666742,238L249.833333333333,238 249.833333333333,0 -0.166666666666742,0 -0.166666666666742,238ZM24.8333333333333,213L224.833333333333,213 224.833333333333,25 24.8333333333333,25 24.8333333333333,213Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath29)">
+		<g transform="translate(474 494.5)">
+			<path fill="#96b656" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0L85.5,0 85.5,85 0.5,85 0.5,0Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath30)">
+		<g transform="translate(474 522.104166666667)">
+			<text fill="#000000" x="3.9583" y="11.9661" font-family="'Arial',sans-serif" font-size="9.75pt">Membership </text>
+			<text fill="#000000" x=".8482" y="26.862" font-family="'Arial',sans-serif" font-size="9.75pt">API Container</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath31)">
+		<g transform="translate(563 494)">
+			<path fill="#96b656" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.5,0.5L85.5,0.5 85.5,85.5 0.5,85.5 0.5,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath32)">
+		<g transform="translate(563 521.604166666667)">
+			<text fill="#000000" x="3.9583" y="12.4661" font-family="'Arial',sans-serif" font-size="9.75pt">Membership </text>
+			<text fill="#000000" x=".8482" y="27.362" font-family="'Arial',sans-serif" font-size="9.75pt">API Container</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath33)">
+		<g transform="translate(474 582)">
+			<path fill="#96b656" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.499999999999773,0.5L85.4999999999998,0.5 85.4999999999998,85.5 0.499999999999773,85.5 0.499999999999773,0.5Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath34)">
+		<g transform="translate(474 609.604166666667)">
+			<text fill="#000000" x="3.9583" y="12.4661" font-family="'Arial',sans-serif" font-size="9.75pt">Membership </text>
+			<text fill="#000000" x=".8482" y="27.362" font-family="'Arial',sans-serif" font-size="9.75pt">API Container</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath35)">
+		<g transform="translate(563 581.666666666667)">
+			<path fill="#96b656" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.499999999999773,-0.166666666666742L85.4999999999998,-0.166666666666742 85.4999999999998,84.8333333333333 0.499999999999773,84.8333333333333 0.499999999999773,-0.166666666666742Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath36)">
+		<g transform="translate(563 609.270833333333)">
+			<text fill="#000000" x="3.9583" y="11.7995" font-family="'Arial',sans-serif" font-size="9.75pt">Membership </text>
+			<text fill="#000000" x=".8482" y="26.6953" font-family="'Arial',sans-serif" font-size="9.75pt">API Container</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath37)">
+		<g transform="translate(112.333333333333 468.552083333333)">
+			<text fill="#000000" x="7.3162" y="12.5182" font-family="'Arial',sans-serif" font-size="9.75pt">Rancher - Membership API - Blue Stack</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath38)">
+		<g transform="translate(441.666666666667 468.552083333333)">
+			<text fill="#000000" x="2.7985" y="12.5182" font-family="'Arial',sans-serif" font-size="9.75pt">Rancher - Membership API - Green Stack</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath39)">
+		<g transform="translate(296 795.833333333333)">
+			<path fill="#f59d56" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M-0.499999999999886,237.666666666667L241.5,237.666666666667 241.5,-0.333333333333485 -0.499999999999886,-0.333333333333485 -0.499999999999886,237.666666666667ZM24.5000000000001,213.666666666667L217.5,213.666666666667 217.5,24.6666666666665 24.5000000000001,24.6666666666665 24.5000000000001,213.666666666667Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath40)">
+		<g transform="translate(328.333333333333 827.833333333333)">
+			<path fill="#f59d56" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.166666666666742,-0.333333333333485L85.1666666666667,-0.333333333333485 85.1666666666667,84.6666666666665 0.166666666666742,84.6666666666665 0.166666666666742,-0.333333333333485Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath41)">
+		<g transform="translate(328.333333333333 862.885416666667)">
+			<text fill="#000000" x="2.1346" y="12.1849" font-family="'Arial',sans-serif" font-size="9.75pt">EC2 Instance</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath42)">
+		<g transform="translate(417.333333333333 827.333333333333)">
+			<path fill="#f59d56" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.166666666666742,0.166666666666515L85.1666666666667,0.166666666666515 85.1666666666667,85.1666666666665 0.166666666666742,85.1666666666665 0.166666666666742,0.166666666666515Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath43)">
+		<g transform="translate(417.333333333333 862.385416666667)">
+			<text fill="#000000" x="2.1346" y="11.6849" font-family="'Arial',sans-serif" font-size="9.75pt">EC2 Instance</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath44)">
+		<g transform="translate(328.333333333333 915.333333333333)">
+			<path fill="#f59d56" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.166666666666686,0.166666666666515L85.1666666666667,0.166666666666515 85.1666666666667,85.1666666666665 0.166666666666686,85.1666666666665 0.166666666666686,0.166666666666515Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath45)">
+		<g transform="translate(328.333333333333 950.385416666667)">
+			<text fill="#000000" x="2.1346" y="11.6849" font-family="'Arial',sans-serif" font-size="9.75pt">EC2 Instance</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath46)">
+		<g transform="translate(417.333333333333 915)">
+			<path fill="#f59d56" stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0.166666666666686,0.499999999999773L85.1666666666667,0.499999999999773 85.1666666666667,85.4999999999998 0.166666666666686,85.4999999999998 0.166666666666686,0.499999999999773Z" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath47)">
+		<g transform="translate(417.333333333333 950.052083333334)">
+			<text fill="#000000" x="2.1346" y="12.0182" font-family="'Arial',sans-serif" font-size="9.75pt">EC2 Instance</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath48)">
+		<g transform="translate(291.666666666667 801.885416666667)">
+			<text fill="#000000" x="64.1801" y="12.1849" font-family="'Arial',sans-serif" font-size="9.75pt">AWS EC2 Instances</text>
+		</g>
+	</g>
+	<g clip-path="url(#clipPath49)">
+		<g transform="matrix(-0.039968038348872 0.999200958721789 -0.999200958721789 -0.039968038348872 240 400)">
+			<path stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0,0L62.549980015984,0" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath50)">
+		<g transform="matrix(0.0266571902389817 0.999644633961771 -0.999644633961771 0.0266571902389817 565 400)">
+			<path stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0,0L62.522218273009,0" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath51)">
+		<g transform="matrix(-0.842424531084073 0.538814355253996 -0.538814355253996 -0.842424531084073 566.666666666667 700)">
+			<path stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0,0L177.859651285938,0" />
+		</g>
+	</g>
+	<g clip-path="url(#clipPath52)">
+		<g transform="matrix(0.881966916834598 0.471311317081686 -0.471311317081686 0.881966916834598 237.5 700)">
+			<path stroke="#3e78b3" stroke-width="1" stroke-linecap="round" stroke-miterlimit="10" fill-rule="evenodd" d="M0,0L203.333401639333,0" />
+		</g>
+	</g>
+</svg>
